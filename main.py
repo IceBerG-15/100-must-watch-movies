@@ -13,6 +13,6 @@ titles=soup.find_all(name='h3',class_='title')
 titles=titles[::-1]
 
 length=len(titles)
-with open('C:\\Python310\\codes\\projects\\100 must watch movies(WEB SCRAPPING)\Starting Code - 100 movies to watch start\\movies.txt','w') as file:  
+with open('movies.txt','w') as file:  
     for title in titles:
         file.write(f'{title.text}\n')
